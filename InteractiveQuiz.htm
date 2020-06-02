@@ -1,0 +1,326 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Nacu's Bakery: Interactive Quiz</title>
+<style type="text/css">
+<!--
+.style5 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+}
+.style8 {font-size: 9px}
+.style9 {	font-size: 12px;
+	color: #666666;
+}
+-->
+</style>
+</head>
+
+<body>
+<DIV align="center">
+  <p><a href="Home.htm"><img src="banner%201%20copy.jpg" alt="Nacu's Bakery" width="970" height="243" border="0"></a></p>
+  <table width="1124" height="83" border="1" bordercolor="#000000" bgcolor="#FFFFCC">
+    <tr>
+      <td width="219"><div align="center" class="style5">
+        <h3><a href="History.htm">History</a></h3>
+      </div></td>
+      <td width="218"><div align="center" class="style5">
+        <h3><a href="Menu.htm">Menu</a></h3>
+      </div></td>
+      <td width="217"><div align="center" class="style5">
+        <h3><a href="Employees.htm">Our Employees </a></h3>
+      </div></td>
+      <td width="221"><div align="center" class="style5">
+        <h3><a href="Specials.htm">Specials</a></h3>
+      </div></td>
+      <td width="217"><div align="center" class="style5">
+        <h3><a href="Contact Us.htm">Contact Us </a></h3>
+      </div></td>
+    </tr>
+  </table>
+          <H1>
+ 	 <CENTER><U> Baking Quiz </U></CENTER>
+        </H1>
+
+ <SCRIPT language=JAVASCRIPT>
+  <!--
+   var right=0;
+   var Score = 0;
+
+      function GradeTest(form)
+   {
+      right=0;
+      Name = prompt("Enter your name","");
+      
+
+      if (!form.CB1[0].checked &&    // Multiple answer Question 1
+          form.CB1[1].checked && 
+          form.CB1[2].checked && 
+          !form.CB1[3].checked )
+         right+=1;
+
+      if (!form.CB2[0].checked &&    // Question 2
+          form.CB2[1].checked && 
+          form.CB2[2].checked && 
+          form.CB2[3].checked )
+         right+=1;
+
+      if (form.CB3[0].checked &&    // Question 3
+          !form.CB3[1].checked && 
+          !form.CB3[2].checked && 
+          form.CB3[3].checked )
+         right+=1;
+   
+      if (!form.CB4[0].checked &&    // Question 4
+          form.CB4[1].checked && 
+          !form.CB4[2].checked && 
+          form.CB4[3].checked )
+         right+=1;
+   
+      if (form.RADIO1[1].checked)    // True of False Question 1
+         right+=1;
+
+      if (form.RADIO2[0].checked)    // Question 2
+         right+=1;
+
+      if (form.RADIO3[1].checked)    // Question 3
+         right+=1;
+
+      if (form.RADIO4[0].checked)    // Question 4
+         right+=1;
+
+      if (form.RADIO5[0].checked)    //  Single answer Question 1
+         right+=1; 
+
+      if (form.RADIO6[3].checked)    // Question 2
+         right+=1; 
+
+      if (form.RADIO7[2].checked)    // Question 3
+         right+=1; 
+
+      if (form.RADIO8[3].checked)    // Question 4
+         right+=1; 
+
+      if (form.TEXT1.value == "Velvet") // Fill in the blank Question 1
+         right+=1;
+
+      if (form.TEXT2.value == "apron") // Fill in the blank Question 2
+         right+=1;
+
+      if (form.TEXT3.value == "recipe") // Fill in the blank Question 3
+         right+=1;
+
+      if (form.TEXT4.value == "oven") // Fill in the blank Question 4
+         right+=1;
+
+      if (form.DD1[1].selected)      // Drop down Question 1
+         right+=1;
+
+      if (form.DD2[3].selected)      // Drop down Question 2
+         right+=1;
+
+      if (form.DD3[2].selected)      // Drop down Question 3
+         right+=1;
+
+      if (form.DD4[2].selected)      // Drop down Question 4
+         right+=1;
+
+      Score = (right/20) * 100
+
+      alert(Name + ", your score is " + Score + "!")
+   }
+
+//-->
+</SCRIPT>
+
+
+<FORM NAME= MyTest>
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>  Question 1 </B></FONT><BR>
+Check all that applies when baking: <BR>
+<INPUT type=checkbox name=CB1> Remember to fill your car with gas <BR>
+<INPUT type=checkbox name=CB1> Make sure you wash your hands before preparing anything <BR>
+<INPUT type=checkbox name=CB1> Clean your working area <BR>
+<INPUT type=checkbox name=CB1> Leave everything when you are done<BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 2 </B></FONT><BR>
+Commonly used items in the kitchen: <BR>
+<INPUT type=checkbox name=CB2> Keyboard <BR>
+<INPUT type=checkbox name=CB2> Measuring Cup <BR>
+<INPUT type=checkbox name=CB2> Timer <BR>
+<INPUT type=checkbox name=CB2> Spoon <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 3 </B></FONT><BR>
+When baking a cookie, you need: <BR>
+<INPUT type=checkbox name=CB3> Eggs <BR>
+<INPUT type=checkbox name=CB3> Jalapenos <BR>
+<INPUT type=checkbox name=CB3> Asparagus <BR>
+<INPUT type=checkbox name=CB3> Flour <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 4 </B></FONT><BR>
+What should you have to prepare ice cream? <BR>
+<INPUT type=checkbox name=CB4> Pepper and Paprika <BR>
+<INPUT type=checkbox name=CB4> Sugar <BR>
+<INPUT type=checkbox name=CB4> Cereal <BR>
+<INPUT type=checkbox name=CB4> Milk <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 5 </B></FONT><BR>
+Baking a brownie is the hardest thing you can make in life <BR><BR>
+<INPUT type=radio name=RADIO1> TRUE <BR>
+<INPUT type=radio name=RADIO1> FALSE <BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 6 </B></FONT><BR>
+Cookies are normally round <BR><BR>
+<INPUT type=radio name=RADIO2> TRUE <BR>
+<INPUT type=radio name=RADIO2> FALSE <BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 7 </B></FONT><BR>
+Sifting the flour just makes it worse <BR><BR>
+<INPUT type=radio name=RADIO3> TRUE <BR>
+<INPUT type=radio name=RADIO3> FALSE <BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 8 </B></FONT><BR>
+You must watch appliances at all times when at use <BR><BR>
+<INPUT type=radio name=RADIO4> TRUE <BR>
+<INPUT type=radio name=RADIO4> FALSE <BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 9 </B></FONT><BR>
+What do you generally use to mix your batter? <BR>
+<INPUT type=radio name=RADIO5> Whisk <BR>
+<INPUT type=radio name=RADIO5> Fork <BR>
+<INPUT type=radio name=RADIO5> Knives <BR>
+<INPUT type=radio name=RADIO5> Soap <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 10 </B></FONT><BR>
+What is 180 degrees converted to Farenheit? <BR>
+<INPUT type=radio name=RADIO6> 26 <BR>
+<INPUT type=radio name=RADIO6> 130 <BR>
+<INPUT type=radio name=RADIO6> 90 <BR>
+<INPUT type=radio name=RADIO6> 360 <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 11 </B></FONT><BR>
+What do you always need to know before preparing a dish? <BR>
+<INPUT type=radio name=RADIO7> Your oven size <BR>
+<INPUT type=radio name=RADIO7> The microwave manual <BR>
+<INPUT type=radio name=RADIO7> Ingredients <BR>
+<INPUT type=radio name=RADIO7> Nothing <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 12 </B></FONT><BR>
+How do you normally know when your cake is ready to move out of the oven? <BR>
+<INPUT type=radio name=RADIO8> When it has said so <BR>
+<INPUT type=radio name=RADIO8> When you hear a siren  <BR>
+<INPUT type=radio name=RADIO8> If it's still in its liquid form <BR>
+<INPUT type=radio name=RADIO8> When it is fully risen<BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 13 </B></FONT><BR>
+A popular and an all time favorite cake is the Red _____ Cake, which can also be in a cupcake form <BR>
+<I>Hint: Capital it </I><BR>
+<INPUT name=TEXT1><BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 14 </B></FONT><BR>
+An _____ is what chefs and cooks use would normally wear on top of their clothes so it won't get dirty <BR>
+<I>Hint: starts with an a</I><BR>
+<INPUT name=TEXT2><BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 15 </B></FONT><BR>
+The r_____e tells you the ingredients, oven heat, time needed, and other information about the food <BR>
+<I>Hint: You know </I><BR>
+<INPUT name=TEXT3><BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 16 </B></FONT><BR>
+The _____ is a kitchen appliance bakers almost always use to bake <BR>
+<I>Hint: It gets hot </I><BR>
+<INPUT name=TEXT4><BR><BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 17 </B></FONT><BR>
+You need this amount of people to bake the simplest things <BR>
+<SELECT name=DD1>
+<OPTION>
+<OPTION>1
+<OPTION>50
+<OPTION>100
+</OPTION>
+</SELECT> <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 18 </B></FONT><BR>
+Something that will help you sift flour <BR>
+<SELECT name=DD2>
+<OPTION>
+<OPTION>Grater
+<OPTION>Peeler
+<OPTION>Sifter
+</OPTION>
+</SELECT> <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B>Question 19 </B></FONT><BR>
+A place where you can find the ingredients you need <BR>
+<SELECT name=DD3>
+<OPTION>
+<OPTION>school
+<OPTION>local grocery store
+<OPTION>Mars
+</OPTION>
+</SELECT> <BR><BR>
+
+
+<FONT FACE=arial COLOR=FF0099 SIZE=4> <B> Question 20 </B></FONT><BR>
+Baking should always be - <BR>
+<SELECT name=DD4>
+<OPTION>
+<OPTION>hard
+<OPTION>fun
+<OPTION>exasperating
+</OPTION>
+</SELECT> <BR><BR>
+
+
+
+<INPUT onclick=GradeTest(MyTest) type=button value="Grade Me!"> 
+<INPUT type=reset value=Reset> 
+
+
+
+</FORM>
+  <p align="center">&nbsp;</p>
+  <p align="center">&nbsp;</p>
+  <p align="center">&nbsp;</p>
+  <p align="center">&nbsp;</p>
+  <p class="style9">nacubakery.com<br>
+  1-564-854-9000 <br>
+  2052C Cake Lane <br>
+  Sugar Land, TX 77124<br>
+  Email: <a href="mailto:nacubakery@mailus.net">nacubakery@mailus.net</a></p>
+  <p class="style8"></p>
+  <p>&nbsp;  </p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;  </p>
+  <p>&nbsp;</p>
+  <p align="center">&nbsp;</p>
+  <p align="center">&nbsp; </p>
+</DIV>
+</body>
+</html>
